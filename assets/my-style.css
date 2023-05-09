@@ -1,0 +1,186 @@
+.head{
+    background-color: cyan;
+    height: 70px;
+}
+body{
+    position: relative;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #000;
+    min-width: 320px;
+    height: auto;
+    margin: 0;
+}
+.navbar{
+    width: 100%;
+    height: 70px;
+    box-shadow: 0 4px 10px rgba(0,0,0, .1);
+}
+.navbar, .container{
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-menu{
+margin-left: 900px;
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.navbar-menu li{
+    display: inline-block;
+}
+.navbar-menu li a {
+    display: inline-block;
+    color: black;
+    opacity: 0.6;
+    text-decoration: none;
+    padding: 10px;
+    transition: all .7s ease-in-out;
+}
+.navbar-wrap{
+    display: flex;
+    flex-flow: row nowrap;
+}
+.callback{
+    margin-left: 100px;
+    padding: 10px 30px;
+    background-color: coral;
+    border-radius: 100px;
+    color: aliceblue;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(255, 127, 80, .2);
+    transition: all .1s ease-out;
+}
+.callback:hover{
+    transform: scale(1.04);
+    color: aqua;
+    box-shadow: 0 9px 9px rgba(255, 127, 80, .5);
+}
+.navbar-brend{
+    margin-left: 70px;
+    font-weight: 700;
+    font-size: 26px;
+    text-decoration: none;
+    color: #000000;
+    transition: all .4s ease-in-out;
+}
+.navbar-menu li a:hover{
+    opacity: 1;
+    border-bottom: 2px solid #000000;
+}
+.navbar-brend:hover{
+    color:coral;
+}
+.motto{
+    margin-top: 220px;
+}
+.banner-photo {
+    margin-top: -385px;
+    background-image: url("img/firefox2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+}
+.cards-container{
+    display: flex;
+    background: #ffffff;
+    width: 100%;
+    justify-content: space-between;
+    text-align: center;
+    padding: 20px;
+}
+
+.cards-container .card{
+    flex: 1 1 33.33%;
+    margin: 0 10px;
+}
+
+.card{
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    display: inline-block;
+    position: relative;
+    padding: 50px 25px;
+    text-decoration: none;
+
+}
+
+.card span{
+    display: block;
+}
+
+.card img{
+    max-width: 100px;
+}
+
+.card i{
+    display: block;
+    position: relative;
+    color: #f08a91;
+    font-size: 2em;
+    padding: .5em;
+}
+
+.card .divider{
+    margin: 20px auto;
+    width: 30%;
+    border-bottom: 2px solid #f08a91;
+}
+
+.card .card-title{
+    color: #000;
+    font-weight: bold;
+    font-size: 1.3em;
+
+}
+
+.card .card-content{
+    color: rgba(0,0,0,.7);
+}
+
+.card:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.card:before, .card:after{
+    content: '';
+    position: absolute;
+    width: calc(100% - 35px);
+    height: calc(100% - 35px);
+    border: 1px solid #fff;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.card:before{
+    top: 0;
+    left: 0;
+    border-width: 1px 0 0 1px;
+}
+
+.card:after{
+    bottom: 0;
+    right: 0;
+    border-width: 0 1px 1px 0;
+}
+
+.card:hover:before, .card:hover:after{
+    width: calc(100% - 1px);
+    height: calc(100% - 1px);
+    border-color: #f08a91;
+}
+
+.card:hover .divider{
+    width: 70%;
+}
+
+.card:hover i, .card:hover .card-title{
+    transform: translateY(-9px);
+}
+
+.card:hover .card-content{
+    transform: translateY(9px);
+}
