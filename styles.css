@@ -1,6 +1,8 @@
 .head{
-    background-color: cyan;
     height: 70px;
+}
+.first-block{
+    margin-top: -71px;
 }
 body{
     position: relative;
@@ -76,9 +78,13 @@ margin-left: 900px;
 }
 .motto{
     margin-top: 220px;
+    margin-left: 800px;
+    font-size: 20px;
+    color: rgb(14, 13, 14);
+    opacity: 0.7;
 }
 .banner-photo {
-    margin-top: -385px;
+    margin-top: -426px;
     background-image: url("img/images.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -90,10 +96,12 @@ margin-left: 900px;
     width: 100%;
     justify-content: space-between;
     text-align: center;
-    padding: 20px;
+    padding: 0px;
+    margin-top: 10px;
 }
 
 .cards-container .card{
+    background-color: bisque;
     flex: 1 1 33.33%;
     margin: 0 10px;
 }
@@ -184,3 +192,42 @@ margin-left: 900px;
 .card:hover .card-content{
     transform: translateY(9px);
 }
+.trunks{
+    background-color: cornflowerblue;
+}
+.description{
+    margin-top: 10px;
+    padding-top: 100px;
+    margin-left: 10px;
+    height: 400px;
+    font-size: 19px;
+    width: 50%;
+}
+.trphoto{
+    height: 400px;
+    background-image: url("sweets.jpg.png");
+    background-repeat: no-repeat;
+    margin-left: 1350px;
+    margin-top: -450px;
+}
+.description2{
+    margin-top: 10px;
+    padding-top: 100px;
+    margin-left: 520px;
+    height: 400px;
+    font-size: 19px;
+    width: 50%;
+}
+.upphoto2{
+    height: 400px;
+    background-image: url("cake.png");
+    background-repeat: no-repeat;
+    margin-left: 30px;
+    margin-top: -450px;
+}
+.underpants{
+    background-color: darkcyan;
+}
+
+
+
